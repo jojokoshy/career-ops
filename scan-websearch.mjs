@@ -164,8 +164,9 @@ async function searchCompany(company) {
     `  { "title": string, "company": string, "url": string, "location": string }\n` +
     `Rules:\n` +
     `- url must be a direct link to the specific job posting (not a homepage or search page)\n` +
-    `- location is the job location (e.g. "Singapore", "Remote"), empty string if unknown\n` +
-    `- If no jobs are found, return []\n` +
+    `- location is the job location as shown in the posting (e.g. "Singapore", "Remote")\n` +
+    `- LOCATION FILTER (STRICT): Only include jobs where the location is clearly one of: Singapore, APAC, Asia Pacific, Asia-Pacific, Remote, Global, or Worldwide. If the location is a city/country outside this list (e.g. USA, London, Berlin, Sydney) or cannot be determined at all, SKIP that job — do not include it.\n` +
+    `- If no qualifying jobs are found, return []\n` +
     `Return ONLY the JSON array, no other text.`;
 
   const output = await runClaude(prompt);

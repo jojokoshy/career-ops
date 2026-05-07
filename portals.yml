@@ -122,19 +122,19 @@ tracked_companies:
   - name: Google Cloud
     careers_url: https://careers.google.com/jobs/results/?q=solutions+architect+singapore
     scan_method: websearch
-    scan_query: 'site:careers.google.com "Solutions Architect" OR "Customer Engineer" OR "Technical Account Manager" Singapore OR APAC'
+    scan_query: 'site:careers.google.com "Solutions Architect" OR "Customer Engineer" OR "Technical Account Manager" OR "Engineering Manager" OR "Principal Engineer" Singapore OR APAC'
     enabled: true
 
   - name: Microsoft
     careers_url: https://jobs.careers.microsoft.com/global/en/search
     scan_method: websearch
-    scan_query: 'site:jobs.careers.microsoft.com "Solution Architect" OR "Sales Engineer" OR "Cloud Architect" Singapore'
+    scan_query: 'site:jobs.careers.microsoft.com "Solution Architect" OR "Sales Engineer" OR "Cloud Architect" OR "Engineering Manager" OR "Principal" Singapore'
     enabled: true
 
   - name: Amazon Web Services
     careers_url: https://www.amazon.jobs/en/teams/aws
     scan_method: websearch
-    scan_query: 'site:amazon.jobs "Solutions Architect" OR "Technical Account Manager" OR "Sales Engineer" Singapore OR APAC'
+    scan_query: 'site:amazon.jobs "Solutions Architect" OR "Technical Account Manager" OR "Sales Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   # -- AI Labs & LLM providers --
@@ -147,7 +147,7 @@ tracked_companies:
   - name: OpenAI
     careers_url: https://openai.com/careers
     scan_method: websearch
-    scan_query: 'site:openai.com/careers "Solutions" OR "Sales Engineer" OR "Customer Engineer" Singapore OR APAC OR "Asia Pacific"'
+    scan_query: 'site:openai.com/careers "Solutions" OR "Sales Engineer" OR "Customer Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC OR "Asia Pacific"'
     enabled: true
 
   - name: Cohere
@@ -158,7 +158,7 @@ tracked_companies:
   - name: Perplexity
     careers_url: https://jobs.ashbyhq.com/perplexity
     scan_method: websearch
-    scan_query: 'site:jobs.ashbyhq.com/perplexity "Solutions" OR "Enterprise" OR "Architect"'
+    scan_query: 'site:jobs.ashbyhq.com/perplexity "Solutions" OR "Enterprise" OR "Architect" OR "Engineering Manager" OR "Principal"'
     enabled: true
 
   # -- Enterprise Software (heavy APAC SA presence) --
@@ -166,31 +166,31 @@ tracked_companies:
   - name: Salesforce
     careers_url: https://careers.salesforce.com
     scan_method: websearch
-    scan_query: 'site:careers.salesforce.com "Solutions Architect" OR "Sales Engineer" OR "Technical Account Manager" Singapore OR APAC'
+    scan_query: 'site:careers.salesforce.com "Solutions Architect" OR "Sales Engineer" OR "Technical Account Manager" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   - name: ServiceNow
     careers_url: https://jobs.smartrecruiters.com/ServiceNow
     scan_method: websearch
-    scan_query: '"ServiceNow" "Solutions Architect" OR "Sales Engineer" OR "Principal Architect" Singapore OR APAC site:smartrecruiters.com OR site:servicenow.com'
+    scan_query: '"ServiceNow" "Solutions Architect" OR "Sales Engineer" OR "Principal Architect" OR "Engineering Manager" OR "Principal" Singapore OR APAC site:smartrecruiters.com OR site:servicenow.com'
     enabled: true
 
   - name: Workday
     careers_url: https://workday.wd5.myworkdayjobs.com/Workday
     scan_method: websearch
-    scan_query: '"Workday" "Solutions Architect" OR "Sales Engineer" OR "Customer Success" Singapore OR APAC'
+    scan_query: '"Workday" "Solutions Architect" OR "Sales Engineer" OR "Customer Success" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   - name: SAP
     careers_url: https://jobs.sap.com
     scan_method: websearch
-    scan_query: 'site:jobs.sap.com "Cloud Solution Architect" OR "Solutions Engineer" Singapore OR APAC OR "Asia Pacific"'
+    scan_query: 'site:jobs.sap.com "Cloud Solution Architect" OR "Solutions Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC OR "Asia Pacific"'
     enabled: true
 
   - name: Oracle
     careers_url: https://careers.oracle.com
     scan_method: websearch
-    scan_query: 'site:careers.oracle.com "Solution Architect" OR "Cloud Architect" OR "Sales Consultant" Singapore OR APAC'
+    scan_query: 'site:careers.oracle.com "Solution Architect" OR "Cloud Architect" OR "Sales Consultant" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   # -- Data & Analytics platforms --
@@ -198,13 +198,13 @@ tracked_companies:
   - name: Snowflake
     careers_url: https://careers.snowflake.com
     scan_method: websearch
-    scan_query: '"Snowflake" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC site:careers.snowflake.com OR site:jobs.lever.co/snowflake'
+    scan_query: '"Snowflake" "Solutions Architect" OR "Sales Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC site:careers.snowflake.com OR site:jobs.lever.co/snowflake'
     enabled: true
 
   - name: Databricks
     careers_url: https://www.databricks.com/company/careers
     scan_method: websearch
-    scan_query: '"Databricks" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC'
+    scan_query: '"Databricks" "Solutions Architect" OR "Sales Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   - name: dbt Labs
@@ -242,7 +242,7 @@ tracked_companies:
   - name: Retool
     careers_url: https://retool.com/careers
     scan_method: websearch
-    scan_query: 'site:retool.com/careers "Solutions" OR "Deployed" OR "Architect"'
+    scan_query: 'site:retool.com/careers "Solutions" OR "Architect" OR "Engineering Manager" OR "Principal"'
     enabled: true
 
   - name: Hightouch
@@ -256,31 +256,31 @@ tracked_companies:
   - name: HashiCorp (IBM)
     careers_url: https://www.hashicorp.com/careers
     scan_method: websearch
-    scan_query: '"HashiCorp" "Solutions Engineer" OR "Solutions Architect" Singapore OR APAC'
+    scan_query: '"HashiCorp" "Solutions Engineer" OR "Solutions Architect" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   - name: Confluent
     careers_url: https://careers.confluent.io
     scan_method: websearch
-    scan_query: '"Confluent" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC site:careers.confluent.io OR site:jobs.lever.co/confluent'
+    scan_query: '"Confluent" "Solutions Architect" OR "Sales Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC site:careers.confluent.io OR site:jobs.lever.co/confluent'
     enabled: true
 
   - name: Grafana Labs
     careers_url: https://grafana.com/about/careers/
     scan_method: websearch
-    scan_query: '"Grafana" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC site:jobs.lever.co/grafanalabs OR site:grafana.com'
+    scan_query: '"Grafana" "Solutions Architect" OR "Sales Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC site:jobs.lever.co/grafanalabs OR site:grafana.com'
     enabled: true
 
   - name: Datadog
     careers_url: https://careers.datadoghq.com
     scan_method: websearch
-    scan_query: '"Datadog" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC site:careers.datadoghq.com'
+    scan_query: '"Datadog" "Solutions Architect" OR "Sales Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC site:careers.datadoghq.com'
     enabled: true
 
   - name: New Relic
     careers_url: https://newrelic.com/about/careers
     scan_method: websearch
-    scan_query: '"New Relic" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC'
+    scan_query: '"New Relic" "Solutions Architect" OR "Sales Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   # -- Security & Zero Trust platforms --
@@ -288,13 +288,13 @@ tracked_companies:
   - name: Palo Alto Networks
     careers_url: https://jobs.paloaltonetworks.com
     scan_method: websearch
-    scan_query: 'site:jobs.paloaltonetworks.com "Solutions Architect" OR "Sales Engineer" Singapore OR APAC'
+    scan_query: 'site:jobs.paloaltonetworks.com "Solutions Architect" OR "Sales Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   - name: CrowdStrike
     careers_url: https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers
     scan_method: websearch
-    scan_query: '"CrowdStrike" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC'
+    scan_query: '"CrowdStrike" "Solutions Architect" OR "Sales Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   - name: Wiz
@@ -308,13 +308,13 @@ tracked_companies:
   - name: Cisco
     careers_url: https://jobs.cisco.com
     scan_method: websearch
-    scan_query: 'site:jobs.cisco.com "Solutions Architect" OR "Sales Engineer" Singapore OR APAC'
+    scan_query: 'site:jobs.cisco.com "Solutions Architect" OR "Sales Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   - name: Juniper Networks
     careers_url: https://jobs.juniper.net
     scan_method: websearch
-    scan_query: '"Juniper" "Solutions Architect" OR "Systems Engineer" Singapore OR APAC'
+    scan_query: '"Juniper" "Solutions Architect" OR "Systems Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   # -- Financial tech & payments --
@@ -322,13 +322,13 @@ tracked_companies:
   - name: Stripe
     careers_url: https://stripe.com/jobs
     scan_method: websearch
-    scan_query: 'site:stripe.com/jobs "Solutions Architect" OR "Solutions Engineer" Singapore OR APAC'
+    scan_query: 'site:stripe.com/jobs "Solutions Architect" OR "Solutions Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   - name: Adyen
     careers_url: https://careers.adyen.com
     scan_method: websearch
-    scan_query: '"Adyen" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC'
+    scan_query: '"Adyen" "Solutions Architect" OR "Sales Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   # -- Infrastructure & Container platforms --
@@ -336,7 +336,7 @@ tracked_companies:
   - name: Akamai / Linode
     careers_url: https://www.akamai.com/careers
     scan_method: websearch
-    scan_query: '"Akamai" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC'
+    scan_query: '"Akamai" "Solutions Architect" OR "Sales Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   - name: Vercel
@@ -356,11 +356,11 @@ tracked_companies:
   - name: Atlassian
     careers_url: https://www.atlassian.com/company/careers
     scan_method: websearch
-    scan_query: 'site:atlassian.com/company/careers "Solutions Architect" OR "Sales Engineer" OR "Technical Account Manager" Singapore OR APAC'
+    scan_query: 'site:atlassian.com/company/careers "Solutions Architect" OR "Sales Engineer" OR "Technical Account Manager" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
 
   - name: Slack (Salesforce)
     careers_url: https://slack.com/careers
     scan_method: websearch
-    scan_query: '"Slack" "Solutions Architect" OR "Solutions Engineer" Singapore OR APAC'
+    scan_query: '"Slack" "Solutions Architect" OR "Solutions Engineer" OR "Engineering Manager" OR "Principal" Singapore OR APAC'
     enabled: true
