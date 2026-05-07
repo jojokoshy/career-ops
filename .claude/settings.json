@@ -1,16 +1,6 @@
 {
-  "sandbox": {
-    "network": {
-      "allowedDomains": [
-        "boards-api.greenhouse.io",
-        "api.ashbyhq.com",
-        "api.lever.co"
-      ]
-    }
-  },
   "permissions": {
     "allow": [
-      "Bash(node scan.mjs*)",
       "Bash(node scan-websearch.mjs*)",
       "Bash(npm install*)",
       "Bash(git add*)",
