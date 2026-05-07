@@ -2,6 +2,39 @@
 # Principal Cloud Solution Architect | Singapore/APAC
 # Target roles: SA / Pre-Sales / Cloud Architect / Engineering Manager
 
+location_filter:
+  include:
+    # At least one of these must appear in the job's location field.
+    # Empty location = unknown = always passes (catches remote/unspecified roles).
+    - "Singapore"
+    - "APAC"
+    - "Asia Pacific"
+    - "Asia-Pacific"
+    - "Remote"
+    - "Worldwide"
+    - "Global"
+  exclude:
+    # Jobs at these locations are always skipped.
+    - "United States"
+    - "New York"
+    - "San Francisco"
+    - "Austin"
+    - "Seattle"
+    - "Chicago"
+    - "Boston"
+    - "Denver"
+    - "Los Angeles"
+    - "Atlanta"
+    - "Europe"
+    - "EMEA"
+    - "London"
+    - "Germany"
+    - "France"
+    - "Netherlands"
+    - "Spain"
+    - "Poland"
+    - "Sweden"
+
 title_filter:
   positive:
     # Solutions Architect family

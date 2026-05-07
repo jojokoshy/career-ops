@@ -134,6 +134,25 @@ function buildTitleFilter(titleFilter) {
   };
 }
 
+// ── Location filter ──────────────────────────────────────────────────
+// If location_filter.include is set, a job must match at least one term.
+// If location_filter.exclude is set, a job must not match any term.
+// Empty/missing location string always passes (location unknown = keep it).
+
+function buildLocationFilter(locationFilter) {
+  if (!locationFilter) return () => true;
+  const include = (locationFilter.include || []).map(k => k.toLowerCase());
+  const exclude = (locationFilter.exclude || []).map(k => k.toLowerCase());
+
+  return (location) => {
+    if (!location) return true; // unknown location — don't discard
+    const lower = location.toLowerCase();
+    if (exclude.length > 0 && exclude.some(k => lower.includes(k))) return false;
+    if (include.length === 0) return true;
+    return include.some(k => lower.includes(k));
+  };
+}
+
 // ── Dedup ───────────────────────────────────────────────────────────
 
 function loadSeenUrls() {
@@ -264,6 +283,7 @@ async function main() {
   const config = parseYaml(readFileSync(PORTALS_PATH, 'utf-8'));
   const companies = config.tracked_companies || [];
   const titleFilter = buildTitleFilter(config.title_filter);
+  const locationFilter = buildLocationFilter(config.location_filter);
 
   // 2. Filter to enabled companies with detectable APIs
   const targets = companies
@@ -298,6 +318,10 @@ async function main() {
 
       for (const job of jobs) {
         if (!titleFilter(job.title)) {
+          totalFiltered++;
+          continue;
+        }
+        if (!locationFilter(job.location)) {
           totalFiltered++;
           continue;
         }
