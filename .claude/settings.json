@@ -7,5 +7,18 @@
         "api.lever.co"
       ]
     }
+  },
+  "permissions": {
+    "allow": [
+      "Bash(node scan.mjs*)",
+      "Bash(node scan-websearch.mjs*)",
+      "Bash(npm install*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(git push*)",
+      "Bash(git pull*)",
+      "Bash(git fetch*)",
+      "Bash(git config*)"
+    ]
   }
 }
