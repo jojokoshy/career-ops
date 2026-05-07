@@ -1,0 +1,333 @@
+# Portal Scanner Configuration — Jojo Koshy
+# Principal Cloud Solution Architect | Singapore/APAC
+# Target roles: SA / Pre-Sales / Cloud Architect / Engineering Manager
+
+title_filter:
+  positive:
+    # Solutions Architect family
+    - "Solutions Architect"
+    - "Solution Architect"
+    - "Cloud Architect"
+    - "Cloud Solution Architect"
+    - "Enterprise Architect"
+    - "Technical Architect"
+    - "Principal Architect"
+    - "Staff Architect"
+    # Pre-sales & Sales Engineering
+    - "Pre-Sales"
+    - "Presales"
+    - "Sales Engineer"
+    - "Sales Engineering"
+    - "Solutions Engineer"
+    - "Solutions Engineering"
+    - "Technical Sales"
+    # Customer-facing technical roles
+    - "Customer Engineer"
+    - "Technical Account Manager"
+    - "TAM"
+    - "Field CTO"
+    - "Field Engineer"
+    - "Customer Success Engineer"
+    - "Solutions Consultant"
+    - "Technical Consultant"
+    # Engineering Management
+    - "Engineering Manager"
+    - "Director of Engineering"
+    - "VP of Engineering"
+    - "Head of Engineering"
+    - "Head of Solutions"
+    - "Head of Pre-Sales"
+    # Cloud-specific
+    - "Cloud Engineer"
+    - "Cloud Platform"
+    - "Cloud Infrastructure"
+    - "Multi-Cloud"
+    - "Hybrid Cloud"
+    # AI/ML SA adjacents
+    - "AI Solutions"
+    - "AI Architect"
+    - "ML Architect"
+    - "GenAI Architect"
+    - "AI Customer Engineer"
+    - "AI Field Engineer"
+
+  negative:
+    - "Junior"
+    - "Intern"
+    - "Graduate"
+    - "Entry Level"
+    - "Blockchain"
+    - "Web3"
+    - "Crypto"
+    - "COBOL"
+    - "Mainframe"
+    - "SAP "
+    - "Oracle EBS"
+    - "Embedded"
+    - "Firmware"
+    - "FPGA"
+    - "ASIC"
+    - "PHP"
+    - "Ruby"
+
+  seniority_boost:
+    - "Senior"
+    - "Staff"
+    - "Principal"
+    - "Lead"
+    - "Head"
+    - "Director"
+    - "VP"
+
+# -- Tracked companies --
+# Major cloud providers, ISVs, and AI companies hiring SA/pre-sales in APAC
+
+tracked_companies:
+
+  # -- Hyperscalers & Big Tech (APAC SA teams) --
+
+  - name: Google Cloud
+    careers_url: https://careers.google.com/jobs/results/?q=solutions+architect+singapore
+    scan_method: websearch
+    scan_query: 'site:careers.google.com "Solutions Architect" OR "Customer Engineer" OR "Technical Account Manager" Singapore OR APAC'
+    enabled: true
+
+  - name: Microsoft
+    careers_url: https://jobs.careers.microsoft.com/global/en/search
+    scan_method: websearch
+    scan_query: 'site:jobs.careers.microsoft.com "Solution Architect" OR "Sales Engineer" OR "Cloud Architect" Singapore'
+    enabled: true
+
+  - name: Amazon Web Services
+    careers_url: https://www.amazon.jobs/en/teams/aws
+    scan_method: websearch
+    scan_query: 'site:amazon.jobs "Solutions Architect" OR "Technical Account Manager" OR "Sales Engineer" Singapore OR APAC'
+    enabled: true
+
+  # -- AI Labs & LLM providers --
+
+  - name: Anthropic
+    careers_url: https://job-boards.greenhouse.io/anthropic
+    api: https://boards-api.greenhouse.io/v1/boards/anthropic/jobs
+    enabled: true
+
+  - name: OpenAI
+    careers_url: https://openai.com/careers
+    scan_method: websearch
+    scan_query: 'site:openai.com/careers "Solutions" OR "Sales Engineer" OR "Customer Engineer" Singapore OR APAC OR "Asia Pacific"'
+    enabled: true
+
+  - name: Cohere
+    careers_url: https://jobs.ashbyhq.com/cohere
+    notes: "AI/LLM provider with enterprise SA roles."
+    enabled: true
+
+  - name: Perplexity
+    careers_url: https://jobs.ashbyhq.com/perplexity
+    scan_method: websearch
+    scan_query: 'site:jobs.ashbyhq.com/perplexity "Solutions" OR "Enterprise" OR "Architect"'
+    enabled: true
+
+  # -- Enterprise Software (heavy APAC SA presence) --
+
+  - name: Salesforce
+    careers_url: https://careers.salesforce.com
+    scan_method: websearch
+    scan_query: 'site:careers.salesforce.com "Solutions Architect" OR "Sales Engineer" OR "Technical Account Manager" Singapore OR APAC'
+    enabled: true
+
+  - name: ServiceNow
+    careers_url: https://jobs.smartrecruiters.com/ServiceNow
+    scan_method: websearch
+    scan_query: '"ServiceNow" "Solutions Architect" OR "Sales Engineer" OR "Principal Architect" Singapore OR APAC site:smartrecruiters.com OR site:servicenow.com'
+    enabled: true
+
+  - name: Workday
+    careers_url: https://workday.wd5.myworkdayjobs.com/Workday
+    scan_method: websearch
+    scan_query: '"Workday" "Solutions Architect" OR "Sales Engineer" OR "Customer Success" Singapore OR APAC'
+    enabled: true
+
+  - name: SAP
+    careers_url: https://jobs.sap.com
+    scan_method: websearch
+    scan_query: 'site:jobs.sap.com "Cloud Solution Architect" OR "Solutions Engineer" Singapore OR APAC OR "Asia Pacific"'
+    enabled: true
+
+  - name: Oracle
+    careers_url: https://careers.oracle.com
+    scan_method: websearch
+    scan_query: 'site:careers.oracle.com "Solution Architect" OR "Cloud Architect" OR "Sales Consultant" Singapore OR APAC'
+    enabled: true
+
+  # -- Data & Analytics platforms --
+
+  - name: Snowflake
+    careers_url: https://careers.snowflake.com
+    scan_method: websearch
+    scan_query: '"Snowflake" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC site:careers.snowflake.com OR site:jobs.lever.co/snowflake'
+    enabled: true
+
+  - name: Databricks
+    careers_url: https://www.databricks.com/company/careers
+    scan_method: websearch
+    scan_query: '"Databricks" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC'
+    enabled: true
+
+  - name: dbt Labs
+    careers_url: https://job-boards.greenhouse.io/dbtlabspt
+    api: https://boards-api.greenhouse.io/v1/boards/dbtlabspt/jobs
+    notes: "Data transformation layer; SA and pre-sales roles."
+    enabled: true
+
+  - name: Fivetran
+    careers_url: https://job-boards.greenhouse.io/fivetran
+    api: https://boards-api.greenhouse.io/v1/boards/fivetran/jobs
+    notes: "ELT/data integration; strong APAC SA team."
+    enabled: true
+
+  # -- AI-native platforms with APAC SA teams --
+
+  - name: Glean
+    careers_url: https://job-boards.greenhouse.io/gleanwork
+    api: https://boards-api.greenhouse.io/v1/boards/gleanwork/jobs
+    notes: "Enterprise AI search. Growing APAC presence."
+    enabled: true
+
+  - name: Arize AI
+    careers_url: https://job-boards.greenhouse.io/arizeai
+    api: https://boards-api.greenhouse.io/v1/boards/arizeai/jobs
+    notes: "LLMOps / AI observability; SA roles."
+    enabled: true
+
+  - name: Temporal
+    careers_url: https://job-boards.greenhouse.io/temporal
+    api: https://boards-api.greenhouse.io/v1/boards/temporal/jobs
+    notes: "Workflow orchestration with enterprise SA team."
+    enabled: true
+
+  - name: Retool
+    careers_url: https://retool.com/careers
+    scan_method: websearch
+    scan_query: 'site:retool.com/careers "Solutions" OR "Deployed" OR "Architect"'
+    enabled: true
+
+  - name: Hightouch
+    careers_url: https://job-boards.greenhouse.io/hightouch
+    api: https://boards-api.greenhouse.io/v1/boards/hightouch/jobs
+    notes: "Data activation + AI agents; solutions engineering roles."
+    enabled: true
+
+  # -- Cloud-native & DevOps platforms --
+
+  - name: HashiCorp (IBM)
+    careers_url: https://www.hashicorp.com/careers
+    scan_method: websearch
+    scan_query: '"HashiCorp" "Solutions Engineer" OR "Solutions Architect" Singapore OR APAC'
+    enabled: true
+
+  - name: Confluent
+    careers_url: https://careers.confluent.io
+    scan_method: websearch
+    scan_query: '"Confluent" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC site:careers.confluent.io OR site:jobs.lever.co/confluent'
+    enabled: true
+
+  - name: Grafana Labs
+    careers_url: https://grafana.com/about/careers/
+    scan_method: websearch
+    scan_query: '"Grafana" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC site:jobs.lever.co/grafanalabs OR site:grafana.com'
+    enabled: true
+
+  - name: Datadog
+    careers_url: https://careers.datadoghq.com
+    scan_method: websearch
+    scan_query: '"Datadog" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC site:careers.datadoghq.com'
+    enabled: true
+
+  - name: New Relic
+    careers_url: https://newrelic.com/about/careers
+    scan_method: websearch
+    scan_query: '"New Relic" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC'
+    enabled: true
+
+  # -- Security & Zero Trust platforms --
+
+  - name: Palo Alto Networks
+    careers_url: https://jobs.paloaltonetworks.com
+    scan_method: websearch
+    scan_query: 'site:jobs.paloaltonetworks.com "Solutions Architect" OR "Sales Engineer" Singapore OR APAC'
+    enabled: true
+
+  - name: CrowdStrike
+    careers_url: https://crowdstrike.wd5.myworkdayjobs.com/crowdstrikecareers
+    scan_method: websearch
+    scan_query: '"CrowdStrike" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC'
+    enabled: true
+
+  - name: Wiz
+    careers_url: https://job-boards.greenhouse.io/wiz
+    api: https://boards-api.greenhouse.io/v1/boards/wiz/jobs
+    notes: "Cloud security unicorn; strong APAC hiring."
+    enabled: true
+
+  # -- Networking & Telco --
+
+  - name: Cisco
+    careers_url: https://jobs.cisco.com
+    scan_method: websearch
+    scan_query: 'site:jobs.cisco.com "Solutions Architect" OR "Sales Engineer" Singapore OR APAC'
+    enabled: true
+
+  - name: Juniper Networks
+    careers_url: https://jobs.juniper.net
+    scan_method: websearch
+    scan_query: '"Juniper" "Solutions Architect" OR "Systems Engineer" Singapore OR APAC'
+    enabled: true
+
+  # -- Financial tech & payments --
+
+  - name: Stripe
+    careers_url: https://stripe.com/jobs
+    scan_method: websearch
+    scan_query: 'site:stripe.com/jobs "Solutions Architect" OR "Solutions Engineer" Singapore OR APAC'
+    enabled: true
+
+  - name: Adyen
+    careers_url: https://careers.adyen.com
+    scan_method: websearch
+    scan_query: '"Adyen" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC'
+    enabled: true
+
+  # -- Infrastructure & Container platforms --
+
+  - name: Akamai / Linode
+    careers_url: https://www.akamai.com/careers
+    scan_method: websearch
+    scan_query: '"Akamai" "Solutions Architect" OR "Sales Engineer" Singapore OR APAC'
+    enabled: true
+
+  - name: Vercel
+    careers_url: https://job-boards.greenhouse.io/vercel
+    api: https://boards-api.greenhouse.io/v1/boards/vercel/jobs
+    notes: "Frontend cloud platform; SA roles."
+    enabled: true
+
+  - name: PlanetScale
+    careers_url: https://job-boards.greenhouse.io/planetscale
+    api: https://boards-api.greenhouse.io/v1/boards/planetscale/jobs
+    notes: "Serverless MySQL; customer engineering roles."
+    enabled: true
+
+  # -- Collaboration & Productivity --
+
+  - name: Atlassian
+    careers_url: https://www.atlassian.com/company/careers
+    scan_method: websearch
+    scan_query: 'site:atlassian.com/company/careers "Solutions Architect" OR "Sales Engineer" OR "Technical Account Manager" Singapore OR APAC'
+    enabled: true
+
+  - name: Slack (Salesforce)
+    careers_url: https://slack.com/careers
+    scan_method: websearch
+    scan_query: '"Slack" "Solutions Architect" OR "Solutions Engineer" Singapore OR APAC'
+    enabled: true
